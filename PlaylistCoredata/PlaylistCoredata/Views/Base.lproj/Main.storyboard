@@ -169,12 +169,21 @@
                         <viewLayoutGuide key="safeArea" id="CZr-mB-JqL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Songs" id="1VX-zt-OsO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Sbh-JO-eys"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Sbh-JO-eys">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="enJ-gX-8G4" id="mYl-tb-dvI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistNameTextField" destination="Uwg-Xm-BG4" id="oZ0-cl-QlK"/>
+                        <outlet property="songTableView" destination="ifw-fV-TBf" id="ilM-Es-Cqu"/>
+                        <outlet property="songTitleTextField" destination="oW9-Ib-iph" id="SMG-dA-I0p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jK-oq-XUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="165"/>
+            <point key="canvasLocation" x="1284" y="157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uzC-wm-5LC">
