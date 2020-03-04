@@ -10,7 +10,9 @@ import Foundation
 import CoreData
 
 extension Playlist {
-    
+    // ignore warning messages
+    @discardableResult
+
     convenience init(name: String, songs: [Song] = [], moc: NSManagedObjectContext = CoreDataStack.context) {
         self.init(context: moc)
         self.name = name
